@@ -3,7 +3,7 @@ from string import ascii_letters, digits
 Digits = digits + ascii_letters
 
 
-def c(n: str, to_base: int, from_base: int = 10) -> int:
+def nsc(n: str, to_base: int, from_base: int = 10) -> int:
 
     if isinstance(n, str):
         n = int(n, from_base)
