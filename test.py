@@ -13,4 +13,4 @@ def nsc(n: str, to_base: int, from_base: int = 10) -> int:
     if n < to_base:
         return Digits[n]
     else:
-        return c(n // to_base, to_base) + Digits[n % to_base]
+        return nsc(n // to_base, to_base) + Digits[n % to_base]
