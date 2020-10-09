@@ -5,7 +5,6 @@ def det2(m2: list) -> int:
 
 
 def mr3(ij: tuple, m3: list) -> list:
-
     m2, s = [[], []], 0
     for i in range(len(m3)):
         if i != ij[0]:
@@ -22,7 +21,6 @@ def det3(m3: list) -> int:
 
 
 def T(m: list) -> list:
-
     Tm, s = list(), -1
     for i in range(len(m)):
         Tm.append([])
@@ -41,7 +39,6 @@ def A3(ij: tuple, m3: list) -> int:
 
 
 def I3(m3: list) -> tuple:
-
     Im3 = t(m3)
     for i in range(len(Im3)):
         for j in range(len(Im3)):
