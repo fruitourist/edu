@@ -39,7 +39,7 @@ def A3(ij: tuple, m3: list) -> int:
 
 
 def I3(m3: list) -> tuple:
-    Im3 = t(m3)
+    Im3 = T(m3)
     for i in range(len(Im3)):
         for j in range(len(Im3)):
             Im3[i][j] = A3((i, j), m3)
