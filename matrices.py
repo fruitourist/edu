@@ -31,17 +31,17 @@ def T(m: list) -> list:
     return Tm
 
 
-def A3(ij: tuple, m3: list) -> int:
+def adj3(ij: tuple, m3: list) -> int:
     if (ij[0] + ij[1]) % 2 == 0:
         return mr3((ij[0], ij[1]), m3)
     else:
-        return -mr3((ij[0], ij[1]), m3)
+        return -1*mr3((ij[0], ij[1]), m3)
 
 
 def I3(m3: list) -> tuple:
     Im3 = T(m3)
     for i in range(len(Im3)):
         for j in range(len(Im3)):
-            Im3[i][j] = A3((i, j), m3)
+            Im3[i][j] = adj3((i, j), m3)
 
     return (Im3, det3(m3))
