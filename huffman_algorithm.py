@@ -7,4 +7,13 @@ def huffman_algorithm(text: str) -> dict:
         else:
             count_char[char] = 1
     
+    leaf = sorted(counter_char.items(), key = lambda char: char[1])
+    
     #processing
+
+    return (counter_char, leaf)
+
+
+#test
+output = huffman_algorithm("воровал варвар у варвара варево")
+print(output)
