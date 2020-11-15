@@ -1,4 +1,4 @@
-def huffman_algorithm(text: str) -> dict:
+def huffman_algorithm(text: str) -> tuple:
 
     count_char = dict()
     for char in text:
@@ -11,6 +11,7 @@ def huffman_algorithm(text: str) -> dict:
     
     #processing
 
+    #test
     return (counter_char, leaf)
 
 
